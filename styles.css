@@ -202,25 +202,14 @@ body::before {
 
   /* Center and compress branding */
   .branding {
-    text-align: center;
+    text-align: center; /* Center all text inside the branding section */
     padding: 0;
     margin-bottom: 20px; /* Reduce spacing */
-    margin-right: 35px; /* Remove extra margin */
+    margin-right: 0; /* Remove unnecessary margin */
   }
 
-  .branding h1 {
-    font-size: 40px;
-    margin-bottom: 5px;
-  }
-
-  .branding h2 {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-
-  .branding p {
-    font-size: 12px;
-    margin: 10px auto;
+  .branding h1, .branding h2, .branding p {
+    text-align: center; /* Ensure all text elements are centered */
   }
 
   .features {
@@ -239,6 +228,11 @@ body::before {
     padding: 15px; /* Reduce padding */
     margin-right: 40px;
     margin-bottom: 40px;
+    text-align: center; /* Center all text inside the login box */
+  }
+
+  .login-box h2, .login-box p {
+    text-align: center; /* Ensure headings and paragraphs are centered */
   }
 
   .login-box h2 {
