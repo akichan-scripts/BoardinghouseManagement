@@ -258,9 +258,5 @@ body::before {
   }
 
   /* Adjust background for mobile */
-  body {
-    background-size: cover; /* Ensure the image still covers the screen */
-    background-position: center; /* Center the image */
-  }
 }
 
