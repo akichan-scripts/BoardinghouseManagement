@@ -6,11 +6,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  html, body {
-    height: 100%;
-    overflow: hidden;
-  }
-
 body {
   background-image: url('3.jpg'), linear-gradient(#008ecba5, #76d4fc, #00b3ffa5);
   background-size: 100% 100%,100% 100%;
