@@ -205,7 +205,7 @@ body::before {
     text-align: center; /* Center all text inside the branding section */
     padding: 0;
     margin-bottom: 20px; /* Reduce spacing */
-    margin-right: 0; /* Remove unnecessary margin */
+    margin-right: 40px; /* Remove unnecessary margin */
   }
 
   .branding h1, .branding h2, .branding p {
