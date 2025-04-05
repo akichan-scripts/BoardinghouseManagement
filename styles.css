@@ -6,16 +6,22 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
 body {
-  background-image: url('3.jpg'), linear-gradient(#008ecba5, #76d4fc, #00b3ffa5);
-  background-size: 100% 100%,100% 100%;
-  background-position: center, center;
+  background-image: url('3.jpg'), linear-gradient(#6cd3ffa5);
+  background-size: 1000px 1080px,100% 100%;
+  background-position: left, center;
   background-repeat: no-repeat,no-repeat;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0;
 }
 
 body::before {
@@ -39,6 +45,7 @@ body::before {
     width: 90%;
     max-width: 1200px;
     gap: 80px;
+    overflow: hidden; 
   }
 
 /* BRANDING SECTION LEFT */
@@ -46,7 +53,7 @@ body::before {
   flex: 1;
   min-width: 300px;
   color: #ffffff;
-  padding-left: 80px;
+  padding-left: 90px;
   margin-bottom: 70px;
 }
 
@@ -183,55 +190,80 @@ body::before {
 /* KANI MAHIMONG RESIZABLE LIKE D*/
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    justify-content: center; /* Center child elements vertically */
     padding: 20px;
-    gap: 20px;
+    gap: 10px; /* Add some spacing between elements */
+    width: 100%;
+    max-width: 90%; /* Compress the container width */
   }
 
+  /* Center and compress branding */
   .branding {
-    padding-right: 0;
     text-align: center;
+    padding: 0;
+    margin-bottom: 25px;;
   }
 
   .branding h1 {
-    font-size: 28px;
+    font-size: 40px;
+    margin-bottom: 5px;
   }
 
   .branding h2 {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .branding p {
-    margin: 20px auto;
+    font-size: 12px;
+    margin: 10px auto;
   }
 
   .features {
     justify-content: center;
+    font-size: 12px; 
   }
 
+  /* Center and compress login box */
   .login-box {
     position: relative;
     right: 0;
     margin: 0 auto;
+    width: 100%;
+    max-width: 350px; /* Compress the login box width */
+    padding: 20px; /* Reduce padding */
   }
 
   .login-box h2 {
-    font-size: 20px;
+    font-size: 18px; /* Compress font size */
   }
 
-  .login-btn {
-    font-size: 14px;
-    padding: 10px;
+  .login-box p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .input-box {
+    margin-bottom: 10px; /* Reduce spacing between inputs */
   }
 
   .input-box input {
-    font-size: 12px;
+    font-size: 12px; /* Compress input font size */
   }
 
-  body {
-    background-position: top;
-    background-attachment: scroll;
+  .login-btn {
+    font-size: 12px; /* Compress button font size */
+    padding: 10px; /* Reduce button padding */
   }
+
+  /* Adjust background for mobile */
+  body {
+    background-size: cover; /* Ensure the image still covers the screen */
+    background-position: center; /* Center the image */
+    background-attachment: scroll; /* Allow scrolling for better performance on mobile */
+  }
+}
 
 }
