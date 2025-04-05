@@ -259,9 +259,10 @@ body::before {
 
   /* Adjust background for mobile */
   body {
-    background-size: cover; /* Ensure the image still covers the screen */
-    background-position: cover; /* Center the image */
-    background-image: url('3.jpg');
+    background-image: url('3.jpg'); /* Use only the image for mobile */
+    background-size: cover; /* Ensure the image covers the screen */
+    background-position: center; /* Center the image */
+    background-attachment: scroll; /* Allow scrolling for better performance */
   }
 
 }
