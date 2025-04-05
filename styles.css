@@ -13,7 +13,7 @@
 
 body {
   background-image: url('3.jpg'), linear-gradient(#008ecba5, #76d4fc, #00b3ffa5);
-  background-size: 1000px 1080px,100% 100%;
+  background-size: 100% 100%,100% 100%;
   background-position: left, center;
   background-repeat: no-repeat,no-repeat;
   background-attachment: fixed;
