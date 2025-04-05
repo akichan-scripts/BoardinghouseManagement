@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0;
 }
 
 body::before {
