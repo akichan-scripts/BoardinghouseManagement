@@ -203,11 +203,11 @@ body::before {
   .branding {
     text-align: center;
     padding: 0;
-    margin-bottom: 25px;;
+    margin-bottom: 30px;
   }
 
   .branding h1 {
-    font-size: 4px;
+    font-size: 40px;
     margin-bottom: 5px;
   }
 
@@ -234,6 +234,7 @@ body::before {
     width: 100%;
     max-width: 350px; /* Compress the login box width */
     padding: 20px; /* Reduce padding */
+    margin-left: 3px;
   }
 
   .login-box h2 {
