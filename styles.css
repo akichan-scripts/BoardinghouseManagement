@@ -258,5 +258,11 @@ body::before {
   }
 
   /* Adjust background for mobile */
+  body {
+    background-size: cover; /* Ensure the image still covers the screen */
+    background-position: cover; /* Center the image */
+    background-image: url('3.jpg');
+  }
+
 }
 
