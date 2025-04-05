@@ -40,7 +40,6 @@ body::before {
     width: 90%;
     max-width: 1200px;
     gap: 80px;
-    overflow: hidden; 
   }
 
 /* BRANDING SECTION LEFT */
